@@ -1,0 +1,437 @@
+IF YOU WANT TO SHARE THE ONE REPOSTERY TO ANOTHER REPOSTERY --- WE USED TO CLONE THE REPO , ADD THAT TO STAGGING AREA , COMMIT , PUSH TO THE LOCAL REPO(THE CONTENT PRESENT IN ORIGIANAL REPO) TO THE REMOTE REPO (GITHUB GLOBAL REPO) .
+
+## THIS IS A TESTED WORKFLOW OF GIT COMMANDS 
+Git commands:
+
+Microsoft Windows [Version 10.0.19045.4529]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin>git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+C:\Users\Admin>git config --global user.name "Anumitha-369"
+
+C:\Users\Admin>git config --global user.email "anumithaj1369@gmal.com"
+
+C:\Users\Admin>git init
+Reinitialized existing Git repository in C:/Users/Admin/.git/
+
+C:\Users\Admin>git clone "https://github.com/Anumitha-369/VOTING-ELIGIBILITY"
+fatal: destination path 'VOTING-ELIGIBILITY' already exists and is not an empty directory.
+
+C:\Users\Admin>git add .
+warning: could not open directory 'AppData/Local/Application Data/': Permission denied
+warning: could not open directory 'AppData/Local/ElevatedDiagnostics/': Permission denied
+warning: could not open directory 'AppData/Local/History/': Permission denied
+warning: could not open directory 'AppData/Local/Microsoft/Windows/INetCache/Content.IE5/': Permission denied
+warning: could not open directory 'AppData/Local/Microsoft/Windows/INetCache/Low/Content.IE5/': Permission denied
+warning: could not open directory 'AppData/Local/Microsoft/Windows/Temporary Internet Files/': Permission denied
+warning: could not open directory 'AppData/Local/Temp/msdtadmin/': Permission denied
+warning: could not open directory 'AppData/Local/Temp/WinSAT/': Permission denied
+warning: could not open directory 'AppData/Local/Temporary Internet Files/': Permission denied
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Documents/My Music/': Permission denied
+warning: could not open directory 'Documents/My Pictures/': Permission denied
+warning: could not open directory 'Documents/My Videos/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: in the working copy of '.docker/config.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.docker/daemon.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.docker/scout/sbom/sha256/bf3dc08bfed031182827888bb15977e316ad797ee2ccb63b4c7a57fdfe7eb31d/sbom.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.docker/scout/sbom/sha256/d2c94e258dcb3c5ac2798d32e1249e42ef01cba4841c2234249495f87264ac5a/sbom.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitconfig', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.lesshst', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.ssh/known_hosts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.vscode/argv.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.vscode/extensions/github.vscode-pull-request-github-0.86.1/.vsixmanifest', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.vscode/extensions/github.vscode-pull-request-github-0.86.1/CHANGELOG.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.vscode/extensions/github.vscode-pull-request-github-0.86.1/LICENSE.txt', LF will be replaced by CRLF the next time Git touches it
+
+
+C:\Users\Admin>git add VOTING ELIGIBILITY
+fatal: pathspec 'VOTING' did not match any files
+
+C:\Users\Admin>git add VOTING-ELIGIBILITY
+warning: adding embedded git repository: VOTING-ELIGIBILITY
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> VOTING-ELIGIBILITY
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached VOTING-ELIGIBILITY
+hint:
+hint: See "git help submodule" for more information.
+
+
+C:\Users\Admin>
+C:\Users\Admin>git rm --cached VOTING-ELIGIBILITY
+error: the following file has staged content different from both the
+file and the HEAD:
+    VOTING-ELIGIBILITY
+(use -f to force removal)
+
+C:\Users\Admin>
+C:\Users\Admin>git rm dir
+fatal: pathspec 'dir' did not match any files
+
+C:\Users\Admin>git init
+Reinitialized existing Git repository in C:/Users/Admin/.git/
+
+C:\Users\Admin>git clone "https://github.com/Anumitha-369/TOWER-OF-HANOI"
+Cloning into 'TOWER-OF-HANOI'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+C:\Users\Admin>git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   VOTING-ELIGIBILITY
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .docker/
+        .gitconfig
+        .idlerc/
+        .lesshst
+        .ssh/
+        .vscode/
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        GIT_CHEATSHEET-/
+        IntelGraphicsProfiles/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TM.blf
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Pictures/
+        Saved Games/
+        Searches/
+        TOWER-OF-HANOI/
+        Videos/
+        WPS Cloud Files/
+        cd
+        chumma.py
+        crypto/
+        dir
+        from scipy import sparse.py
+        gauss.py
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        python
+        sample_piece/
+        wmic
+        wminc
+
+
+C:\Users\Admin>git add .gitmodules VOTING-ELIGIBILITY
+fatal: pathspec '.gitmodules' did not match any files
+
+C:\Users\Admin>git add TOWER-OF-HANOI
+warning: adding embedded git repository: TOWER-OF-HANOI
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> TOWER-OF-HANOI
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached TOWER-OF-HANOI
+hint:
+hint: See "git help submodule" for more information.
+
+C:\Users\Admin>git add "TOWER-OF-HANOI"
+
+C:\Users\Admin>git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   TOWER-OF-HANOI
+        new file:   VOTING-ELIGIBILITY
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .docker/
+        .gitconfig
+        .idlerc/
+        .lesshst
+        .ssh/
+        .vscode/
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        GIT_CHEATSHEET-/
+        IntelGraphicsProfiles/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TM.blf
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WPS Cloud Files/
+        cd
+        chumma.py
+        crypto/
+        dir
+        from scipy import sparse.py
+        gauss.py
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        python
+        sample_piece/
+        wmic
+        wminc
+
+
+C:\Users\Admin>git commit -m "REPO ADDED - VOTING ELIGIBILITY"
+[master (root-commit) b7011a6] REPO ADDED - VOTING ELIGIBILITY
+ 2 files changed, 2 insertions(+)
+ create mode 160000 TOWER-OF-HANOI
+ create mode 160000 VOTING-ELIGIBILITY
+###################### BEFORE PUSHING THE LOCAL REPO , CREATE A NEW REPOSITORY AND THEN PUSH “ THE PATH OF THE LOCAL REPO “ 
+
+C:\Users\Admin>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\Admin>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\Admin>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\Admin>git branch
+* master
+
+C:\Users\Admin>git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\Admin>git push origin "REPO ADDED - VOTING ELIGIBILITY
+fatal: invalid refspec 'REPO ADDED - VOTING ELIGIBILITY'
+
+C:\Users\Admin>cd master
+The system cannot find the path specified.
+
+C:\Users\Admin>cd "https://github.com/Anumitha-369/TOWER-OF-HANOI"
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Admin>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\Admin>cd "https://github.com/Anumitha-369/TOWER-OF-HANOI"
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Admin>git branch
+* master
+
+C:\Users\Admin>git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\Admin>git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .docker/
+        .gitconfig
+        .idlerc/
+        .lesshst
+        .ssh/
+        .vscode/
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        GIT_CHEATSHEET-/
+        IntelGraphicsProfiles/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TM.blf
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{0914c041-a155-11ed-98dc-901b46a56050}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WPS Cloud Files/
+        cd
+        chumma.py
+        crypto/
+        dir
+        from scipy import sparse.py
+        gauss.py
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        python
+        sample_piece/
+        wmic
+        wminc
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Admin>git remote add origin https://github.com/Anumitha-369/TOWER-OF-HANOI.git
+
+C:\Users\Admin>git push -u origin master
+fatal: unable to access 'https://github.com/Anumitha-369/TOWER-OF-HANOI.git/': OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0
+
+C:\Users\Admin>git push "https://github.com/Anumitha-369/GIT_CHEATSHEET-"
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 273 bytes | 136.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Anumitha-369/GIT_CHEATSHEET-/pull/new/master
+remote:
+To https://github.com/Anumitha-369/GIT_CHEATSHEET-
+ * [new branch]      master -> master
+
+C:\Users\Admin>git pull origin main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.10 KiB | 46.00 KiB/s, done.
+From https://github.com/Anumitha-369/TOWER-OF-HANOI
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
